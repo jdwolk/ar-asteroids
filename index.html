@@ -14,12 +14,16 @@
     -->
 
     <a-assets>
-      <a-asset-item id="asteroid1-asset" src="./asteroid1.gltf"></a-asset-item>
+      <a-asset-item id="asteroid1-asset" src="./asteroid1/scene.gltf"></a-asset-item>
     </a-assets>
 
     <a-marker type='pattern' url='./asteroid1.patt'>
-      <a-entity id="asteroid1" gltf-model="#asteroid1-asset" position="0 1 -2.5"></a-entity>
+      <a-entity id="asteroid1" gltf-model="#asteroid1-asset" position="0 0 0" scale="1 1 1" ></a-entity>
+      <!--<a-entity id="asteroid1" gltf-model="#asteroid1-asset" position="0 -2 0" scale="0.0025 0.0025 0.0025" ></a-entity>-->
+      <a-cylinder color="crimson" height="2" radius="0.01" position="0 0 -0.5" rotation="0 45 -45"></a-cylinder>
+      <a-cylinder color="crimson" height="1.5" radius="0.01" position="1.25 0.68 -1" rotation="0 0 90"></a-cylinder>
     </a-marker>
+
   </a-scene>
 
   <script>
